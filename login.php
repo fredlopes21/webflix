@@ -45,15 +45,16 @@ if (isset($_POST['submit'])) {
           <img src="assets/img/webflix.png" alt="Webflix" class="webflix">
           <h1 class="card-title">Sign In</h1>
           <p>To continue to Webflix.</p>
+          <p>For demonstration purposes type 'username' for the username and 'password' for the password.</p>
           <form method="POST">
 
             <?php echo $account->getError(Constants::$loginFailed); ?>
             <div class="form-group">
-              <input type="text" name="username" class="form-control" placeholder="Username" value="<?php $account->getInputValue("username"); ?>" required>
+              <input type="text" name="username" class="form-control" placeholder="DEMO: username" value="<?php $account->getInputValue("username"); ?>" required>
             </div>
 
             <div class="form-group">
-              <input type="password" name="password" class="form-control" placeholder="Password" required>
+              <input type="password" name="password" class="form-control" placeholder="DEMO: password" required>
             </div>
 
             <div class="form-group">
