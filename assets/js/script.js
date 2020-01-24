@@ -52,7 +52,7 @@ $('.replay').click(function() {
 $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 5,
-  nav: true,
+  nav: false,
   dots: false,
   responsiveClass: true,
   responsive: {
