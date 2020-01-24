@@ -13,7 +13,7 @@ require('includes/classes/VideoProvider.php');
 require('includes/classes/User.php');
 
 if (!isset($_SESSION["userLoggedIn"])) {
-  header("Location: register.php");
+  header("Location: login.php");
 }
 
 $userLoggedIn = $_SESSION["userLoggedIn"];
