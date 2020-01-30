@@ -85,19 +85,57 @@ body {
   right: 0;
 }
 
-#register,
-#login,
 #account {
   background: #ccc;
   min-height: 100vh;
 }
+
+#register,
+#login {
+  background: url('../img/form-bg.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+#register .overlay,
+#login .overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 #register .card,
 #login .card,
 #account .card {
-  margin: 1rem auto;
+  margin: 2rem auto;
   max-width: 28rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
 }
+
+#register .card,
+#login .card {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+#register .card .card-body form .form-control,
+#login .card .card-body form .form-control {
+  background: none;
+  color: #fff;
+}
+
+@-webkit-keyframes autofill {
+  0%,
+  100% {
+    color: #fff;
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
 #register .card .card-body .card-title,
 #login .card .card-body .card-title,
 #account .card .card-body .card-title {
