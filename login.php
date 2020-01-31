@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
         <div class="card">
           <div class="card-body">
             <img src="assets/img/webflix.png" alt="Webflix" class="webflix">
-            <h1 class="card-title">Sign In</h1>
+            <h1 class="card-title">Log In</h1>
             <p>To continue to Webflix.</p>
             <p>For demonstration purposes type 'username' for the username and 'password' for the password.</p>
             <form method="POST">
@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
               </div>
 
               <div class="form-group">
-                <input type="submit" name="submit" class="btn btn-primary" value="SUBMIT">
+                <input type="submit" name="submit" class="btn btn-danger" value="LOGIN">
               </div>
             </form>
             <p>Don't have an account? Sign up <a href="register.php" class="text-danger">here</a>.</p>
