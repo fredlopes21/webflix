@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
               </div>
 
               <div class="form-group">
-                <input type="submit" name="submit" class=" btn btn-primary" value="SUBMIT">
+                <input type="submit" name="submit" class=" btn btn-danger" value="SUBMIT">
               </div>
             </form>
             <p>Already have an account? Sign in <a href="login.php" class="text-danger">here</a>.</p>
